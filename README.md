@@ -1,17 +1,21 @@
-# Advanced Verifying Agent
+# 🤖 Advanced Verifying Agent
 
-An LLM‑based agent that generates an answer, verifies it with a second LLM, and corrects iteratively.
+An intelligent AI agent that can answer questions, verify its own answers, and automatically correct mistakes using LLMs (OpenAI, Anthropic) with advanced features.
 
-## Features
-- Supports **mock** (no API key), **OpenAI**, and **Anthropic** backends
-- Multi‑round verification and correction
-- Result caching to reduce API calls
-- CLI interface
-- Extensible prompt templates
+## ✨ Features
 
-## Installation
+- **Self-Verification**: Automatically checks and corrects its own answers
+- **Async Support**: Fully async for high performance
+- **Persistent Cache**: Disk-based caching to save API costs
+- **Chain-of-Thought**: Step-by-step verification for better accuracy
+- **External Tools**: Calculator, web search, and knowledge base integration
+- **Metrics Collection**: Track performance and usage statistics
+- **Multiple LLM Providers**: OpenAI, Anthropic, or mock for testing
+- **Streaming Support**: Real-time response streaming
+
+## 🚀 Quick Start
+
+### Installation
 
 ```bash
-git clone https://github.com/vimarsht8/verifying-agent.git
-cd verifying-agent
 pip install -r requirements.txt
