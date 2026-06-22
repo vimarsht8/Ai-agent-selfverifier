@@ -53,3 +53,22 @@ An intelligent AI agent that can answer questions, verify its own answers, and a
 
 ```bash
 pip install -r requirements.txt
+
+## 🏗️ Architecture
+
+The agent follows a **self-verification loop** pattern:
+
+
+### 🔄 Verification Loop Flow
+
+```mermaid
+graph TD
+    A[Start] --> B[Generate Answer]
+    B --> C[Verify Answer]
+    C --> D{Is Correct?}
+    D -->|Yes| E[Return Answer]
+    D -->|No| F[Extract Error]
+    F --> G[Generate Correction]
+    G --> H{Max Rounds?}
+    H -->|No| C
+    H -->|Yes| E
